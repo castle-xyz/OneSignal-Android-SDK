@@ -105,4 +105,6 @@ interface INotificationsManager {
      * @param listener The previously added listener that should be removed.
      */
     fun removeClickListener(listener: INotificationClickListener)
+
+    fun refreshNotificationState()
 }

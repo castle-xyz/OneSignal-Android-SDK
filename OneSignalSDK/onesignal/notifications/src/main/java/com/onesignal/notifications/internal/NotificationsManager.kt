@@ -78,7 +78,7 @@ internal class NotificationsManager(
     /**
      * Called when app has gained focus and the notification state should be refreshed.
      */
-    private fun refreshNotificationState() {
+    override fun refreshNotificationState() {
         // ensure all notifications for this app have been restored to the notification panel
         _notificationRestoreWorkManager.beginEnqueueingWork(_applicationService.appContext, false)
 
