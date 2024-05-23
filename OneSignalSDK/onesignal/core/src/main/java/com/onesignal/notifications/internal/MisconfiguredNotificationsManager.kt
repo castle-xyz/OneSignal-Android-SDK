@@ -35,6 +35,8 @@ internal class MisconfiguredNotificationsManager : INotificationsManager {
 
     override fun removeClickListener(listener: INotificationClickListener) = throw EXCEPTION
 
+    override fun refreshNotificationState() = throw EXCEPTION
+
     companion object {
         private val EXCEPTION = Exception("Must include gradle module com.onesignal:Notification in order to use this functionality!")
     }
